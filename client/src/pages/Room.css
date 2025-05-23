@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f0f1e;
+  color: #fff;
+}
+
+.room-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 250px;
+  background: #1e1e38;
+  padding: 20px;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.user-list {
+  background: rgba(20, 20, 40, 0.8);
+  padding: 10px;
+  border-radius: 12px;
+  color: white;
+}
+
+.user-list h3 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.user-item {
+  padding: 6px;
+  border-bottom: 1px solid #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.user-item.me {
+  color: #6fcaff;
+  font-weight: bold;
+}
+
+.host-badge {
+  background: gold;
+  color: black;
+  padding: 2px 6px;
+  margin-left: 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+}
+
+.video-section {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #101024;
+  padding: 10px;
+}
+
+.my-video, .remote-video {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  background: black;
+}
+
+.chat-section {
+  width: 300px;
+  background: #181832;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-bubble {
+  max-width: 80%;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 14px;
+  background: #252540;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.chat-bubble.me {
+  background: #4455cc;
+  align-self: flex-end;
+}
+
+.chat-bubble.other {
+  background: #2e2e4d;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px 0;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px 0 0 8px;
+  border: none;
+  outline: none;
+  background: #222248;
+  color: white;
+}
+
+.chat-input button {
+  background: linear-gradient(to right, #3b3b98, #182848);
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.chat-input button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #4a4aff, #000066);
+}
