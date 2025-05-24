@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 
-const authRoutes = require('./authRoutes'); // ✅ Update this line!
+const authRoutes = require('./authRoutes'); // <- Correct path here
 
 dotenv.config();
 
